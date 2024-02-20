@@ -1,0 +1,10 @@
+<h1>Edit</h1>
+
+<%= form_with model: @task do |form| %>
+  <%= form.text_field :title %>
+  <%= form.text_area :details %>
+  <%= check_box_tag(:completed)%>
+  <%= form.submit %>
+<% end %>
+
+<%=link_to "menu", tasks_path%>
